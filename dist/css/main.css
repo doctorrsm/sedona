@@ -394,6 +394,8 @@ h4 {
   display: flex;
   justify-content: space-between;
   position: relative;
+  padding: 0 72px;
+  align-items: center;
 }
 
 .navbar__nav-list {
@@ -401,6 +403,14 @@ h4 {
   top: 0;
   list-style-type: none;
   display: flex;
+}
+
+.navbar__item {
+  margin-right: 35px;
+}
+
+.navbar__item:last-child {
+  margin-right: 0;
 }
 
 .navbar__nav-link {
@@ -414,4 +424,6 @@ h4 {
   position: absolute;
   top: 0;
   left: 50%;
+  top: -14px;
+  transform: translateX(-50%);
 }

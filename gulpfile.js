@@ -3,6 +3,7 @@ const { watch, series } = require('gulp');
 const gulp = require('gulp');
 const pug = require('gulp-pug');
 const sass = require('gulp-sass')(require('sass'));
+const clean = require('gulp-clean');
 
 exports.views = () => {
     return src('./src/*.pug')
