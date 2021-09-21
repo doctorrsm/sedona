@@ -27,6 +27,12 @@ function html() {
     .pipe(dest('./dist'));
 };
 
+function img() {
+    return gulp.src('./src/images/**/*.*')
+    .pipe(gulp.dest('./dist/images'));
+};
+
+
 function css() {
     return gulp.src('./src/sass/**/*.scss')
     .pipe(sass.sync().on('error', sass.logError))
@@ -35,9 +41,9 @@ function css() {
 
 
 exports.default = function() {
-    gulp.series(html,css);
+    gulp.series(html,css,img);
     //watch('./src/*.pug', series(html));
-    watch('./src/**/**/*.pug', series(html));
-    watch('./src/sass/**/*.scss', series(css));
+    watch('./src/**/**/*.pug', series(html,css,img));
+    watch('./src/sass/**/*.scss', series(html,css,img));
     
 };
