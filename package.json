@@ -1,0 +1,29 @@
+{
+  "name": "port1-port",
+  "version": "1.0.0",
+  "description": "this is my first partfolio file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doctorrsm/port1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/doctorrsm/port1/issues"
+  },
+  "homepage": "https://github.com/doctorrsm/port1#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-watch": "^5.0.1",
+    "sass": "^1.39.0"
+  },
+  "dependencies": {
+    "@splidejs/splide": "^2.4.21"
+  }
+}
