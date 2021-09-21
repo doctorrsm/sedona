@@ -36,7 +36,7 @@ function css() {
 exports.default = function() {
     gulp.series(html,css);
     //watch('./src/*.pug', series(html));
-    watch('./src/**/*.pug', series(html));
+    watch('./src/**/**/*.pug', series(html));
     watch('./src/sass/**/*.scss', series(css));
     
 };

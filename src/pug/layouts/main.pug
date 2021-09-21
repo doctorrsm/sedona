@@ -7,17 +7,19 @@ html(lang='ru')
         title Добро пожаловать в Седону
         meta(name='keywords' content='One, two, three, four, five')
         link(rel='shortcut icon' href='img/site/favicon.png' type='image/png')
-        link(rel='stylesheet' href='css/normalize.css')
-       
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap' rel='stylesheet')
+
+
+
         link(rel='stylesheet' href='css/main.css')
-        
+
     body
-        block header
+        header.page-header
+            block header
         main
             block main
-            
-        block footer
-       
-        footer
+
+        footer.page-footer
             block footer
-            
