@@ -1,4 +1,10 @@
+*{
+    box-sizing: border-box;
+}
 html {
+    background-image: url("../images/perfectpixel.png");
+    background-position: top center;
+    background-repeat: no-repeat;
     font-family: 'PT Sans', sans-serif;
     font-size: 20px;
     font-style: normal;
@@ -7,40 +13,61 @@ html {
     letter-spacing: 0em;
     color: #333333;
 
-    }
+}
 
-
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'PT Sans', sans-serif;
-    font-size: 60px;
     font-style: normal;
     font-weight: 700;
+    letter-spacing: 0em;
+}
+
+h1 {
+    font-size: 60px;
     line-height: 78px;
-    letter-spacing: 0em;    
 }
 
 h2 {
-    font-family: 'PT Sans', sans-serif;
     font-size: 40px;
-    font-style: normal;
     font-weight: 700;
-    letter-spacing: 0em;    
 }
 
 
 h3 {
-    font-family: 'PT Sans', sans-serif;
     font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
     line-height: 30px;
-    letter-spacing: 0em;    
 }
 
 h4 {
-    font-family: 'PT Sans', sans-serif;
     font-size: 24px;
-    font-style: normal;
+}
+
+a {
+    cursor: pointer;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 34px 11px;
+    font-size: 16px;
+    letter-spacing:0.3px;
+    line-height: 1;
     font-weight: 700;
-    letter-spacing: 0em;    
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 4px;
+}
+.btn--dark {
+    background-color: #756257;
+    
+}
+
+.btn--light {
+
 }

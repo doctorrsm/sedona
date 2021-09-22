@@ -16,6 +16,11 @@ exports.views = () => {
         .pipe(dest('./dist'));
 };
 
+exports.img = () => {
+    return gulp.src('./src/images/**/*.*')
+    .pipe(gulp.dest('./dist/images'));
+};
+
 function html() {
     return src('./src/*.pug')
     .pipe(
@@ -43,7 +48,7 @@ function css() {
 exports.default = function() {
     gulp.series(html,css,img);
     //watch('./src/*.pug', series(html));
-    watch('./src/**/**/*.pug', series(html,css,img));
-    watch('./src/sass/**/*.scss', series(html,css,img));
+    watch('./src/**/**/*.pug', series(html));
+    watch('./src/sass/**/*.scss', series(css));
     
 };
