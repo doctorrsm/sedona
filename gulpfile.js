@@ -185,7 +185,7 @@ exports.sorting = () => {
              })
         ])
     ).pipe(
-        gulp.dest('./css/src')
+        gulp.dest('./dist/css/*.css')
     );
 };
 
