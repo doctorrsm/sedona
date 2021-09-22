@@ -119,9 +119,9 @@ small {
  */
 sub,
 sup {
+  position: relative;
   font-size: 75%;
   line-height: 0;
-  position: relative;
   vertical-align: baseline;
 }
 
@@ -228,11 +228,11 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
+  /* 2 */
+  display: table;
   box-sizing: border-box;
   /* 1 */
   color: inherit;
-  /* 2 */
-  display: table;
   /* 1 */
   max-width: 100%;
   /* 1 */
@@ -395,7 +395,7 @@ a {
 }
 
 .btn {
-  display: inline-block;
+ 
   padding: 10px 34px 11px;
   font-size: 16px;
   letter-spacing: 0.3px;
@@ -404,7 +404,9 @@ a {
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
+  display: inline-block;
   border-radius: 4px;
+  margin: 0;
 }
 
 .btn--dark {
@@ -416,19 +418,19 @@ a {
 }
 
 .navbar__container {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  position: relative;
   padding: 0 72px;
   align-items: center;
 }
 
 .navbar__nav-list {
+  display: flex;
+  top: 0;
   margin: 0;
   padding: 0;
-  top: 0;
   list-style-type: none;
-  display: flex;
 }
 
 .navbar__item {
@@ -449,7 +451,7 @@ a {
 .navbar__logo {
   position: absolute;
   top: 0;
-  left: 50%;
   top: -14px;
+  left: 50%;
   transform: translateX(-50%);
 }
